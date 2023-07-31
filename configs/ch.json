@@ -1,0 +1,28 @@
+{
+  "env": {
+    "name": "Swimmer-v4",
+    "max_steps": 400,
+    "seed":0
+  },
+  "policy": {
+    "hidden_ctrl": 256,
+    "n_hidden_layers": 2,
+    "lr": 0.1
+  },
+  "noise": {
+    "seed": 3407,
+    "tbl_size": 250e6,
+    "mu": 0,
+    "std": 1,
+    "swap": true,
+    "cholesky": true,
+    "corr": 0.3
+  },
+  "training": {
+    "gens": 1000,
+    "policies_per_gen": 96,
+    "elite": 10,
+    "with_parents": false,
+    "ob_norm":true
+  }
+}
